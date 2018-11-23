@@ -1,0 +1,218 @@
+/*C116*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C117*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C118*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C119*/SET SCHEMA PUBLIC
+DROP TABLE RENTAL_RECORD
+DISCONNECT
+/*C120*/SET SCHEMA PUBLIC
+DROP TABLE RENTAL_PROPERTY
+DISCONNECT
+/*C121*/SET SCHEMA PUBLIC
+CREATE TABLE rental_property (property_id VARCHAR(30) NOT NULL,number VARCHAR(10) NOT NULL,address VARCHAR(100) NOT NULL,suburb VARCHAR(20) NOT NULL,type VARCHAR(20) NOT NULL,bedroom INT NOT NULL,status VARCHAR(20) NOT NULL,last_maintenance VARCHAR(20),image_name VARCHAR(20),description VARCHAR(1000),PRIMARY KEY (property_id))
+DISCONNECT
+/*C122*/SET SCHEMA PUBLIC
+CREATE TABLE rental_record (record_id VARCHAR(30) NOT NULL,rent_date VARCHAR(30) NOT NULL,estimated_return_date VARCHAR(30) NOT NULL,Actual_return_date VARCHAR(30),rental_fee VARCHAR(20),late_fee VARCHAR(20) ,PRIMARY KEY (record_id),property_id VARCHAR(30) FOREIGN KEY REFERENCES rental_property(property_id))
+DISCONNECT
+/*C123*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('S_414LSK','414','Leopold Street','Kensington','Premium Suite',3,'Available','11/11/2018','S_005.jpg','This S_414LSK fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C124*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_414LSK_CUS_051_01072018','01/07/2018','06/07/2018','06/07/2018','2770.00','0.00','S_414LSK')
+COMMIT
+DISCONNECT
+/*C125*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_414LSK_CUS_053_08072018','08/07/2018','13/07/2018','29/07/2018','2770.00','2480.00','S_414LSK')
+COMMIT
+DISCONNECT
+/*C126*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_650SSSY','650','Swanston Street','South Yarra','Apartment',1,'Available','null','A_002.jpg','This A_650SSSY fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C127*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_650SSSY_CUS_014_09072018','09/07/2018','13/07/2018','13/07/2018','572.00','0.00','A_650SSSY')
+COMMIT
+DISCONNECT
+/*C128*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_650SSSY_CUS_035_23072018','23/07/2018','27/07/2018','29/07/2018','572.00','328.90','A_650SSSY')
+COMMIT
+DISCONNECT
+/*C129*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_650SSSY_CUS_047_01072018','01/07/2018','04/07/2018','07/07/2018','429.00','493.35','A_650SSSY')
+COMMIT
+DISCONNECT
+/*C130*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_22WSSW','22','Walsh Street','South Wharf','Apartment',3,'Available','null','A_010.jpg','This A_22WSSW fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C131*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_22WSSW_CUS_031_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_22WSSW')
+COMMIT
+DISCONNECT
+/*C132*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_22WSSW_CUS_032_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_22WSSW')
+COMMIT
+DISCONNECT
+/*C133*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_22WSSW_CUS_033_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_22WSSW')
+COMMIT
+DISCONNECT
+/*C134*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('S_593WSCS','593','William Street','Carlton South','Premium Suite',3,'Available','11/11/2018','S_002.jpg','This S_593WSCS fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C135*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_593WSCS_CUS_021_01072018','01/07/2018','06/07/2018','06/07/2018','2770.00','0.00','S_593WSCS')
+COMMIT
+DISCONNECT
+/*C136*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_593WSCS_CUS_023_08072018','08/07/2018','13/07/2018','29/07/2018','2770.00','2480.00','S_593WSCS')
+COMMIT
+DISCONNECT
+/*C137*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_580ASSY','580','Anderson Street','South Yarra','Apartment',2,'Available','null','A_005.jpg','This A_580ASSY fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C138*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_580ASSY_CUS_077_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_580ASSY')
+COMMIT
+DISCONNECT
+/*C139*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_580ASSY_CUS_078_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_580ASSY')
+COMMIT
+DISCONNECT
+/*C140*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_880PSWM','880','Pasley Street','West Melbourne','Apartment',1,'Available','null','A_006.jpg','This A_880PSWM fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C141*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_880PSWM_CUS_066_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_880PSWM')
+COMMIT
+DISCONNECT
+/*C142*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_880PSWM_CUS_067_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_880PSWM')
+COMMIT
+DISCONNECT
+/*C143*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_110LSK','110','Leopold Street','Kensington','Apartment',3,'Available','null','A_008.jpg','This A_110LSK fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C144*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_110LSK_CUS_011_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_110LSK')
+COMMIT
+DISCONNECT
+/*C145*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_110LSK_CUS_012_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_110LSK')
+COMMIT
+DISCONNECT
+/*C146*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_110LSK_CUS_013_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_110LSK')
+COMMIT
+DISCONNECT
+/*C147*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_390MSPM','390','Millswyn Street','Port Melbourne','Apartment',3,'Available','null','A_007.jpg','This A_390MSPM fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C148*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_390MSPM_CUS_074_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_390MSPM')
+COMMIT
+DISCONNECT
+/*C149*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_390MSPM_CUS_075_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_390MSPM')
+COMMIT
+DISCONNECT
+/*C150*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_109SSSY','109','Swanston Street','South Yarra','Apartment',1,'Available','null','A_001.jpg','This A_109SSSY fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C151*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_109SSSY_CUS_017_01072018','01/07/2018','04/07/2018','07/07/2018','429.00','493.35','A_109SSSY')
+COMMIT
+DISCONNECT
+/*C152*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_109SSSY_CUS_018_09072018','09/07/2018','13/07/2018','13/07/2018','572.00','0.00','A_109SSSY')
+COMMIT
+DISCONNECT
+/*C153*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_109SSSY_CUS_019_23072018','23/07/2018','27/07/2018','29/07/2018','572.00','328.90','A_109SSSY')
+COMMIT
+DISCONNECT
+/*C154*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('S_678RPWM','678','Railway Place','West Melbourne','Premium Suite',3,'Available','11/11/2018','S_003.jpg','This S_678RPWM fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C155*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_678RPWM_CUS_031_01072018','01/07/2018','06/07/2018','06/07/2018','2770.00','0.00','S_678RPWM')
+COMMIT
+DISCONNECT
+/*C156*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_678RPWM_CUS_033_08072018','08/07/2018','13/07/2018','29/07/2018','2770.00','2480.00','S_678RPWM')
+COMMIT
+DISCONNECT
+/*C157*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_107ESJ','107','Elizabeth Street','Jolimont','Apartment',1,'Available','null','A_003.jpg','This A_107ESJ fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C158*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_107ESJ_CUS_012_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_107ESJ')
+COMMIT
+DISCONNECT
+/*C159*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_107ESJ_CUS_046_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_107ESJ')
+COMMIT
+DISCONNECT
+/*C160*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('S_56CSSW','56','Clowes Street','South Wharf','Premium Suite',3,'Available','11/11/2018','S_004.jpg','This S_56CSSW fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C161*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_56CSSW_CUS_041_01072018','01/07/2018','06/07/2018','06/07/2018','2770.00','0.00','S_56CSSW')
+COMMIT
+DISCONNECT
+/*C162*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_56CSSW_CUS_043_08072018','08/07/2018','13/07/2018','29/07/2018','2770.00','2480.00','S_56CSSW')
+COMMIT
+DISCONNECT
+/*C163*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('S_444ASSY','444','Anderson Street','South Yarra','Premium Suite',3,'Available','11/11/2018','S_001.jpg','This S_444ASSY fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C164*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_444ASSY_CUS_011_01072018','01/07/2018','06/07/2018','06/07/2018','2770.00','0.00','S_444ASSY')
+COMMIT
+DISCONNECT
+/*C165*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('S_444ASSY_CUS_013_08072018','08/07/2018','13/07/2018','29/07/2018','2770.00','2480.00','S_444ASSY')
+COMMIT
+DISCONNECT
+/*C166*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_384CSSW','384','Clowes Street','South Wharf','Apartment',1,'Available','null','A_009.jpg','This A_384CSSW fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C167*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_384CSSW_CUS_021_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_384CSSW')
+COMMIT
+DISCONNECT
+/*C168*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_384CSSW_CUS_022_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_384CSSW')
+COMMIT
+DISCONNECT
+/*C169*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_384CSSW_CUS_023_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_384CSSW')
+COMMIT
+DISCONNECT
+/*C170*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_PROPERTY VALUES('A_80RPWM','80','Railway Place','West Melbourne','Apartment',3,'Available','null','A_004.jpg','This A_80RPWM fully furnished brand new apartment in Lighthouse has been meticulously designed and built to service the every need of inner CBD living. Generous sized living room filled with natural light and flow onto a winter garden balcony with views throughout the CBD and suburbs. The kitchen is state of the art with stone benchtops, an abundance of pantry space and stainless steel appliances including oven, gas cooktop and dishwasher. The bedroom is filled with an abundance of natural light and enjoys spectacular views across Melbourne offering room for a queen sized bed with bed side tables and mirrored built in robes. Lighthouse apartments are fitted with designer bathrooms offering plenty of space and are complete with a Euro laundry. Life at Lighthouse provides access Communal facilities includes an outdoor area with 25-metre pool and spa, and grassed relaxation areas. Similarly, inside, there will be an indoor gym, private dining and entertaining facilities.')
+COMMIT
+DISCONNECT
+/*C171*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_80RPWM_CUS_044_11072018','11/07/2018','14/07/2018','17/07/2018','429.00','493.35','A_80RPWM')
+COMMIT
+DISCONNECT
+/*C172*/SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('A_80RPWM_CUS_045_01072018','01/07/2018','08/07/2018','09/07/2018','1001.00','164.45','A_80RPWM')
+COMMIT
+DISCONNECT
